@@ -11,6 +11,7 @@ public class MaquinaExpendedoraSimple {
     // El destino del billete
     private String estacionDestino;
 
+
     /**
      * Crea una maquina expendedora de billetes de tren con el 
      * precio del billete y el origen y destino dados. Se asume que el precio
@@ -23,7 +24,7 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "Leon";
         estacionDestino = "Madrid";
     }
-
+    
         /**
      * Crea una maquina expendedora de billetes de tren con el 
      * precio del billete y el origen y destino dados. Se asume que el precio
@@ -36,6 +37,7 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "Leon";
         estacionDestino = destino;
     }
+    
     /**
      * Devuelve el precio del billete
      */
@@ -63,7 +65,15 @@ public class MaquinaExpendedoraSimple {
     public void introducirDinero(int cantidadIntroducida) {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
     }
-
+    
+    /**
+     * cambia el precio del billete
+     */
+    public void setCambiaPrecioDelBillete( int precioDelBillete) { 
+        precioBillete = precioDelBillete;
+    }
+        
+ 
     /**
      * Imprime un billete para el cliente actual
      */
